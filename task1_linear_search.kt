@@ -1,5 +1,5 @@
 
-// Project i1. Level 1. Unit 1. Task 1. Linear search
+// Project i1. Level 1. Unit 1. Task 1. Linear search.
 
 private fun linearSearch(a: IntArray, target: Int): Int? {
     var targetIndex: Int? = 0
