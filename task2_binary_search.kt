@@ -16,13 +16,13 @@ fun binarySearch(a: IntArray, target: Int): Int? {
     var leftIndex = 0
     var rightIndex = a.lastIndex
 
-    while (leftIndex <= rightIndex){
+    while (leftIndex <= rightIndex) {
         val middleIndex = (leftIndex + rightIndex) / 2
 
         if (target == a[middleIndex])
             return middleIndex
 
-        if (target < a[middleIndex]){
+        if (target < a[middleIndex]) {
             rightIndex = middleIndex - 1
         } else {
             leftIndex = middleIndex + 1

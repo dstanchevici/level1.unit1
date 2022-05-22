@@ -2,21 +2,17 @@
 // Project i1. Level 1. Unit 1. Task 1. Linear search.
 
 private fun linearSearch(a: IntArray, target: Int): Int? {
-    var targetIndex: Int? = 0
-
-    if (targetIndex != null){
-        for (number in a){
-            if (number == target)
-                return targetIndex
-            targetIndex++
-        }
+    for ((targetIndex, number) in a.withIndex()){
+        if (number == target)
+            return targetIndex
     }
+
     return null
 }
 
 fun main(){
     val a = intArrayOf(1, 0, 12, 45, 31)
-    val target = 0
+    val target = 1
     val targetIndex = linearSearch(a, target)
 
     if (targetIndex != null){
@@ -24,5 +20,4 @@ fun main(){
     } else {
         println("This array does not contain $target.")
     }
-
 }
